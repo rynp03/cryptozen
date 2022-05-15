@@ -37,7 +37,7 @@ const Banner = () => {
             variant="subtitle2"
             style={{ color: "darkgrey", textTransform: "capitalize" }}
           >
-            Get all the info regarding you favourite Crypto Currency
+            Get all the info regarding your favourite Crypto Currency
           </Typography>
         </div>
       </Container>

@@ -12,6 +12,7 @@ import {
 
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import {Cryptostate} from '../Cryptocontext';
 
 const useStyles = makeStyles({
   title: {
@@ -28,6 +29,8 @@ const Header = () => {
 
   const navigate = useNavigate();
 
+  const {currency,setcurrency} = Cryptostate();
+  
   const darkTheme = createTheme({
     palette: {
       primary: {
@@ -56,6 +59,7 @@ const Header = () => {
                 height: 40,
                 marginRight: 15,
               }}
+              value={currency} onChange = {(e) => setcurrency(e.target.value)}
             >
               <MenuItem value={"USD"}> USD </MenuItem>
               <MenuItem value={"INR"}> INR </MenuItem>
