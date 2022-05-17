@@ -4,7 +4,9 @@ import Carousel from "./Carousel";
 
 const useStyles = makeStyles({
   banner: {
-    backgroundImage: "url(./banner2.jpeg)",
+    backgroundImage: "url(./wave.jpeg)",
+    backgroundSize: 'cover',
+    backgroundPosition: 'center center',
   },
   bannerContent: {
     height: "40vh", //400 value here
