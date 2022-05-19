@@ -30,8 +30,7 @@ const useStyles = makeStyles({
       backgroundColor: "#131A26",
     },
     pagination: {
-      "& .MuiPaginationItem-root": {
-      },
+      "& .MuiPaginationItem-root": {},
     },
   },
 });
@@ -195,7 +194,7 @@ const CoinsTable = () => {
           count={(handleSearch()?.length / 10).toFixed(0)}
           onChange={(_, value) => {
             setPage(value);
-            window.scroll(0,450);
+            window.scroll(0, 450);
           }}
         />
       </Container>
