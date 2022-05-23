@@ -51,13 +51,14 @@ const useStyles = makeStyles((theme) => ({
       display: "flex",
       justifyContent: "space-around",
     },
-    // [theme.breakpoints.down("sm")]: {
-    //   flexDirection: "column",
-    //   alignItems: "center",
-    // },
-    // [theme.breakpoints.down("xs")]: {
-    //   alignItems: "start",
-    // },
+    [theme.breakpoints.down("sm")]: {
+      flexDirection: "column",
+      alignItems: "center",
+    },
+    [theme.breakpoints.down("xs")]: {
+      alignItems: "start",
+      textAlign: "justify",
+    },
   },
 }));
 
